@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace, monospace;
+  color: white;
+}
+
+body {
+  background-color: rgb(15, 7, 46);
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserNames-div {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin-bottom: -12vh;
+}
+
+#TicTacToeFields {
+  border: 2px solid white;
+  width: 600px;
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 2px 2px 20px rgb(255, 255, 255);
+  margin-top: 13vh;
+}
+
+.TicTacToeField {
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  text-shadow: 2px 2px 40px rgb(255, 255, 255);
+}
+
+h1 {
+  color: white;
+  font-size: 10vh;
+  position: absolute;
+}
+.UserNames {
+  font-size: 4vh;
+}
+
+.username-input-div {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  padding: 3vh 0vh 3vh;
+}
+.username-input {
+  background: none;
+  border: none;
+  border: 2px solid white;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+.score-div {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+}
+.score {
+  font-size: 3rem;
+  text-shadow: 2px 2px 40px rgb(255, 255, 255);
+}
+@media only screen and (max-width: 480px) {
+  .UserNames {
+    font-size: 3vh;
+  }
+}
