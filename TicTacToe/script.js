@@ -70,10 +70,8 @@ document.querySelectorAll(".TicTacToeField").forEach((field) => {
         if (checkWin(currentPlayer)) {
           setTimeout(() => {
             currentPlayer === "X"
-              ? alert(`${playerXname} hat gewonnen!`)
-              : alert(`${playerOname} hat gewonnen!`);
-
-            currentPlayer === "X" ? player1Wins++ : playerOname++;
+              ? alert(`${playerXname} hat gewonnen!`) + player1Wins++
+              : alert(`${playerOname} hat gewonnen!`) + player2Wins++;
 
             restartGame();
           }, 100);
